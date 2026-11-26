@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pomodory: Focus Timer</title>
+<meta name="description" content="A gentle focus timer. Warm an egg while you focus, hatch a wobble, and help Woolly stitch his blanket.">
+<meta name="apple-itunes-app" content="app-id=6838193835">
+<link rel="icon" href="img/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--mint:#D9F1EE;--ink:#1E2B4A;--soft:#44557A;--coral:#FF7A59;--ledge:#C9512F;--white:#fff}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--mint);color:var(--ink);font:700 17px/1.5 Nunito,system-ui,sans-serif}
+  .wrap{max-width:980px;margin:0 auto;padding:56px 20px 40px}
+  header{text-align:center}
+  .icon{width:112px;height:112px;border-radius:26px;box-shadow:0 5px 0 #b9d9d4}
+  h1{font:700 44px/1.1 Fredoka,sans-serif;margin:20px 0 10px;letter-spacing:.3px}
+  .lead{max-width:560px;margin:0 auto 26px;color:var(--soft);font-size:19px}
+  .btn{display:inline-block;background:var(--coral);color:var(--ink);text-decoration:none;font:600 20px Fredoka,sans-serif;padding:15px 28px;border-radius:18px;box-shadow:0 5px 0 var(--ledge)}
+  .btn:active{transform:translateY(3px);box-shadow:0 2px 0 var(--ledge)}
+  .shots{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:52px 0}
+  .shots img{width:100%;border-radius:22px;display:block;box-shadow:0 5px 0 #b9d9d4}
+  .points{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .card{background:var(--white);border-radius:20px;padding:20px 22px;box-shadow:0 4px 0 #b9d9d4}
+  .card h2{font:600 20px Fredoka,sans-serif;margin:0 0 6px}
+  .card p{margin:0;color:var(--soft);font-size:16px}
+  footer{text-align:center;color:var(--soft);font-size:14px;margin-top:48px}
+  footer a{color:var(--ink)}
+  @media (max-width:760px){
+    .shots{grid-template-columns:repeat(2,1fr)}
+    .points{grid-template-columns:1fr}
+    h1{font-size:36px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img class="icon" src="img/icon.png" alt="Pomodory app icon">
+    <h1>Pomodory</h1>
+    <p class="lead">A gentle focus timer. Warm an egg while you focus, hatch a wobble when the timer ends, and help Woolly stitch his blanket one day at a time.</p>
+    <a class="btn" href="https://apps.apple.com/app/id6838193835">Download on the App Store</a>
+  </header>
+
+  <section class="shots" aria-label="Screenshots">
+    <img src="img/1-hatch.jpg" alt="A wobble hatching from its egg" loading="lazy">
+    <img src="img/2-warming.jpg" alt="Woolly warming an egg during a focus session" loading="lazy">
+    <img src="img/3-sanctuary.jpg" alt="The Sanctuary, where your wobbles live" loading="lazy">
+    <img src="img/7-wobbles.jpg" alt="Your collection of wobbles" loading="lazy">
+  </section>
+
+  <section class="points">
+    <div class="card"><h2>Focus, then hatch</h2><p>Pick an egg and start a session. Stay with it and a little wobble hatches at the end.</p></div>
+    <div class="card"><h2>Kind when you slip</h2><p>Leave the app and the egg cools. It is still yours, so come back and keep warming.</p></div>
+    <div class="card"><h2>No ads, no account</h2><p>Nothing to sign up for, and the app collects no personal data.</p></div>
+  </section>
+
+  <footer>
+    <p>Made by Emberglass Software · <a href="mailto:tim@emberglasssoftware.com">tim@emberglasssoftware.com</a> · <a href="privacy/">Privacy policy</a></p>
+  </footer>
+</div>
+</body>
+</html>
